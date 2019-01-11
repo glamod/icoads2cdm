@@ -1,0 +1,9 @@
+[
+{"codes":[0],"description":"degrees and tenths"},
+{"codes":[1],"description":"whole degrees"},
+{"codes":[2],"description":"mixed precision"},
+{"codes":[3],"description":"interpolated"},
+{"codes":[4],"description":"degrees and minutes"},
+{"codes":[5],"description":"high resolution data (e.g., degrees to seconds)"},
+{"codes":[6],"description":"other"}
+]

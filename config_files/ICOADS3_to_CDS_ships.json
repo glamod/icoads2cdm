@@ -1,0 +1,7 @@
+{
+"supplemental":{"process":false,"format":"meds","replace": {"LAT_core":"Lat","LON_core":"Lon"} },
+"attachments_out": ["c1","c98"],
+"variables_out":["sst","at","slp","wd","ws","dpt","wbt"],
+"select":{"PT_c1":[1,2,3,4,5,7]},
+"metadata":{"process":true,"format":"wmo_pub47","path":"/group_workspaces/jasmin2/c3s311a_lot2/data/metadata/marine/pub47/monthly_station_list"}
+}

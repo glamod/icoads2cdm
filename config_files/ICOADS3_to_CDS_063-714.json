@@ -1,0 +1,6 @@
+{
+"supplemental":{"process":true,"format":"meds","replace":{"LAT_core":"Lat","LON_core":"Lon","SST_core":"SST","AT_core":"Airtemp","SLP_core":"Pressure","D_core":"WDir","W_core":"WSp"}},
+"attachments_out": ["c1","c98"],
+"variables_out":["at","sst","slp","wd","ws","dpt","wbt"],
+"select":{"PT_c1":[1,2,3,4,5,7]}
+}

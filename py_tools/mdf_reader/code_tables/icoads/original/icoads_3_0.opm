@@ -1,0 +1,10 @@
+opm	code	description
+0	10	Selected ships
+1	15	Selected ships (AWS)
+2	30	VOSClim
+3	35	VOSClim (AWS)
+4	40	Supplementary ships
+5	45	Supplementary ships (AWS)
+6	70	Auxiliary ships
+7	75	Auxiliary ships (AWS)
+8	99	Unknown

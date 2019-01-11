@@ -1,0 +1,20 @@
+SID	DCK	Configuration file	SID Description	DCK Description  ( read as tab separated: awk -F '\t' '' )
+070	667	ICOADS3_to_CDS_ships.json	Inter-American Tropical Tuna Comm. (IATTC) Porpoise Obs. Logs�	Inter-American Tropical Tuna Commission (IATTC)�
+071	667	ICOADS3_to_CDS_ships.json	IATTC Fishing Logs�	Inter-American Tropical Tuna Commission (IATTC)�
+109	708	ICOADS3_to_CDS_ships.json	US Navy Marine (US-keyed ship data; hourly METAR format)�	US Navy Marine (US-keyed ship data; hourly METAR format)�
+157	709	ICOADS3_to_CDS_ships.json	US Navy Marine (IMMA formatted by US Navy)�	US Navy Marine (IMMA formatted by US Navy)�
+046	732	ICOADS3_to_CDS_ships.json	International Maritime Met. (IMM) Tape Archive (1982-)�	Russian Marine Met. Data Set (MORMET) (rec�d at NCAR)�
+057	732	ICOADS3_to_CDS_ships.json	Russian Marine Meteorological Data Set (MORMET) (rec'd at NCAR)�	Russian Marine Met. Data Set (MORMET) (rec�d at NCAR)�
+064	735	ICOADS3_to_CDS_ships.json	Russian Research Vessel (R/V) Digitization: Marine Surface�	Russian Research Vessel (R/V) Digitization�
+065	735	ICOADS3_to_CDS_ships.json	Russian Research Vessel (R/V) Digitization: Marine Actinometric�	Russian Research Vessel (R/V) Digitization�
+115	761	ICOADS3_to_CDS_ships.json	Japanese Whaling Ship Data (CDMP digitization)�	Japanese Whaling Ship Data (CDMP/MIT digitization)�
+137	780	ICOADS3_to_CDS_ships.json	NODC/OCL 2005 World Ocean Database (WOD05) updated through 13 Dec. 2007�	"NOAA/NCEI World Ocean Database (WOD) (and formerly Atlas, WOA)�"
+149	780	ICOADS3_to_CDS_ships.json	NOAA/NCEI 2013 World Ocean Database (WOD13) updated through 24-02-2015�	"NOAA/NCEI World Ocean Database (WOD) (and formerly Atlas, WOA)�"
+143	781	ICOADS3_to_CDS_ships.json	Chinese/Global Ocean Data Archeology and Rescue (GODAR) Ships�	Chinese/Global Ocean Data Archeology and Rescue (GODAR) Ships�
+159	782	ICOADS3_to_CDS_ships.json	Global Ocean Surface Underway Data (GOSUD v2) from NCEI in WOD format received 19 May 2015�	Global Ocean Surface Underway Data (GOSUD)�
+163	782	ICOADS3_to_CDS_ships.json	GOSUD v3 near real-time data from NCEI in WOD format received 30 April 2015�	Global Ocean Surface Underway Data (GOSUD)�
+164	782	ICOADS3_to_CDS_ships.json	GOSUD delayed-mode French research vessels and sailing ship data from NCEI in WOD format received 30 April 2015�	Global Ocean Surface Underway Data (GOSUD)�
+100	792	ICOADS3_to_CDS_ships.json	NCEP BUFR GTS: Operational Tanks: Converted from Original Message�	US Natl. Cntrs. for Environ. Pred. (NCEP) BUFR GTS: Ship Data�
+103	792	ICOADS3_to_CDS_ships.json	NCEP BUFR GTS: Dumped Data: Converted from BUFR�	US Natl. Cntrs. for Environ. Pred. (NCEP) BUFR GTS: Ship Data�
+079	888	ICOADS3_to_CDS_ships.json	US Air Force Global Weather Central (GWC): DATSAV2 format�	US Air Force Global Weather Central (GWC)�
+114	992	ICOADS3_to_CDS_ships.json	NCEI GTS�	NCEI GTS: Ship Data�

@@ -1,0 +1,5 @@
+QC control flags set to "object" data type as processing file 2014-06.imma1 'P' values were found in the QC_SST field.
+But then I had to process the QC flags, and so I needed either to convert them to integer with a try, or evaluate as string:
+  So:
+    converters.int change to return imiss if try and except
+    and data_type int8

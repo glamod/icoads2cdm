@@ -1,0 +1,32 @@
+Only for map stats script: could not possibly install datashader in py2
+This is a devolopment environment, anyways, so watch out for changes!
+https://github.com/agstephens/jaspy/tree/master/doc#creating-your-own-software-environments-on-top-of-a-jaspy-environment
+plus:
+pip install datashader==0.6.8
+pip install future
+
+
+
+github content on installation....
+
+# Set path and activate conda environment
+export PATH=/apps/contrib/jaspy/miniconda_envs/jaspy3.6/m3-4.5.4/bin:$PATH
+source activate jaspy3.6-m3-4.5.4-r20180816
+
+# Create your own virtualenv - you only do this once!
+virtualenv --system-site-packages my-venv
+
+# Activate your virtualenv
+source my-venv/bin/activate
+
+# Install some package into your virtualenv - only do this once!
+pip install pytest
+
+# Test we can import a package in the main conda env AND one in our own venv
+python -c 'import matplotlib; import pytest'
+
+# ...which would raise an exception if it couldn't find either package.
+
+export PATH=/apps/contrib/jaspy/miniconda_envs/jaspy3.6/m3-4.5.4/bin:$PATH
+source activate jaspy3.6-m3-4.5.4-r20180816
+source my-py3-venv/bin/activate

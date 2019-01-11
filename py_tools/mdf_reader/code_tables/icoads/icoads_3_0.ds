@@ -1,0 +1,12 @@
+[
+{"codes":[0],"description":"stationary (ship hove to)","aux_info":{"direction (deg)":0.0}},
+{"codes":[1],"description":"NE","aux_info":{"direction (deg)":45.0}},
+{"codes":[2],"description":"E","aux_info":{"direction (deg)":90.0}},
+{"codes":[3],"description":"SE","aux_info":{"direction (deg)":135.0}},
+{"codes":[4],"description":"S","aux_info":{"direction (deg)":180.0}},
+{"codes":[5],"description":"SW","aux_info":{"direction (deg)":225.0}},
+{"codes":[6],"description":"W","aux_info":{"direction (deg)":270.0}},
+{"codes":[7],"description":"NW","aux_info":{"direction (deg)":315.0}},
+{"codes":[8],"description":"N","aux_info":{"direction (deg)":360.0}},
+{"codes":[9],"description":"unknown","aux_info":{"direction (deg)":null}}
+]

@@ -1,0 +1,11 @@
+housing	code	description
+0	A	Aspirated (Assmann type)
+1	S	Screen (not ventilated)
+2	HH	Hand-held digital thermometer / humidity sensor
+3	RS	Radiation shield (e.g. cylindrical / Gill multi-plate)
+4	SG	Ship's Sling
+5	SL	Sling
+6	SN	Ship's screen
+7	US	Unscreened
+8	VS	Screen (ventilated)
+9	W	Whirling

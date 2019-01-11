@@ -1,0 +1,123 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red13\green0\blue129;
+\red235\green236\blue237;\red36\green38\blue41;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c6275\c6275\c58039;
+\cssrgb\c93725\c94118\c94510;\cssrgb\c18824\c20000\c21176;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22960\viewh14520\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ICOADS.xsd to json\
+\
+Python:\
+---------\
+##---(Mon Sep 17 14:29:19 2018)---\
+import sys\
+sys.path.append('/Users/iregon/C3S/dessaps/CDSpy')\
+from readers.common.schema import * (modified so as to not append section to name and to include all fields in the DF)\
+schema = load_schema('/Users/iregon/C3S/dessaps/CDSpy/readers/schemas/imma1.xsd')\
+schema_main = schema['schema']\
+schema_main\
+schema_main_sections=schema_main.set_index(['section'])\
+schema_main_sections.to_json('/Users/iregon/C3S/dessaps/CDSpy/readers/schemas/imma1.json',orient='records',lines=True)\
+\
+Awk:\
+\'97\'97\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 awk '\{print "\\t\\t"substr($0, 1, length($0)-1)",\\"precision\\":\\"NA\\"\},"\}' imma1.json > imma1_1.json
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 Manually:\
+\'97\'97\'97\'97\'97\'97\
+\
+Add structure\
+Add precision based on scale: ICOADS.xsd. Rules\
+	- Only applied to floats: \'93NA\'94 elsewhere\
+	- Value based on scale: scale 1 -> precision 0\
+                                               Scale 0.1 -> precision 1\'85..\
+\
+NEED NOW TO CONVERT STRING NUMBERS TO NUMBERS\'85\'85\
+\
+Python:\
+\
+import json\
+v1_json='/Users/iregon/C3S/dessaps/CDSpy/readers/schemas/imma1.json'\
+with open(v1_json) as v1_file:\
+    data_j = json.load(v1_file)\
+\
+for section in data_j['sections']:\
+	for i,rec in enumerate(data_j['sections'][section]['content']):\
+		data_j['sections'][section]['content'][i]['field_length']=int(data_j['sections'][section]['content'][i]['field_length'])\
+		if 'float' in data_j['sections'][section]['content'][i]['column_type']:\
+			try:\
+				pre = data_j['sections'][section]['content'][i]['precision']\
+				if pre > 0:\
+					data_j['sections'][section]['content'][i]['scale']=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+round(
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 float(data_j['sections'][section]['content'][i]['scale']),pre
+\f1\fs26 \cf6 \cb5 \expnd0\expndtw0\kerning0
+)
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+					data_j['sections'][section]['content'][i]['valid_max']=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+round(
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 float(data_j['sections'][section]['content'][i]['valid_max']),pre
+\f1\fs26 \cf6 \cb5 \expnd0\expndtw0\kerning0
+)
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+					data_j['sections'][section]['content'][i]['valid_min']=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+round(
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 float(data_j['sections'][section]['content'][i]['valid_min']),pre
+\f1\fs26 \cf6 \cb5 \expnd0\expndtw0\kerning0
+)\
+				else:\
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 					data_j['sections'][section]['content'][i]['scale']=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+int
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 (data_j['sections'][section]['content'][i]['scale'])\
+					data_j['sections'][section]['content'][i]['valid_max']=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+int
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 (data_j['sections'][section]['content'][i]['valid_max'])\
+					data_j['sections'][section]['content'][i]['valid_min']=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+int
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 (data_j['sections'][section]['content'][i]['valid_min'])
+\f1\fs26 \cf6 \cb5 \expnd0\expndtw0\kerning0
+					
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+			except Exception as e:\
+				print(e)\
+				print(rec)\
+		else:\
+			for field in ['scale','valid_max','valid_min']:\
+				try:\
+					data_j['sections'][section]['content'][i][field]=
+\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+int
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 (data_j['sections'][section]['content'][i][field])\
+				except:\
+					pass	\
+\
+with open('/Users/iregon/C3S/dessaps/CDSpy/readers/schemas/imma1_1.json', 'w') as fp:\
+    json.dump(data_j,fp)\
+\
+Then, rearrange manually\'85\'85.\
+\
+???? STRANGE THINGS ON THE WAY, NOT CHANGED SO FAR\
+ 1. \{\'93codetable":"NA","column_type":"flo8at","description":"height of secondary swell","encoding":"NA","field_length":"2","names":"SH2","scale":"0.5","valid_max":"99","valid_min":"0","precision":1\}\
+ 2. \{\'93codetable":"NA","column_type":"float32","description":"value added data","encoding":"NA","field_length":"6","names":"VAD","scale":"NA","valid_max":"NA","valid_min":"NA","precision":"NA"\}\
+ 3.\{\'93codetable":"NA","column_type":"float32","description":"uncertainty of type IVAU1","encoding":"NA","field_length":"6","names":"VAU1","scale":"NA","valid_max":"NA","valid_min":"NA","precision":"NA"\},\
+ 4.\{\'93codetable":"NA","column_type":"float32","description":"uncertainty of type IVAU2","encoding":"NA","field_length":"6","names":"VAU2","scale":"NA","valid_max":"NA","valid_min":"NA","precision":"NA"\},\
+ 5.\{\'93codetable":"NA","column_type":"float32","description":"uncertainty of type IVAU3","encoding":"NA","field_length":"6","names":"VAU3","scale":"NA","valid_max":"NA","valid_min":"NA","precision":"NA"\},\
+ 6.\{\'93codetable":"NA","column_type":"float32","description":"corrected \\/ erroneous field \
+flag","encoding":"NA","field_length":"1","names":"CEF","scale":"NA","valid_max":"NA","valid_min":"NA","precision":"NA"\},\
+ 7.\{\'93codetable":"NA","column_type":"float32","description":"corrected \\/ erroneous field value","encoding":"NA","field_length":"10","names":"ERRD","scale":"NA","valid_max":"NA","valid_min":"NA","precision":"NA"\},}

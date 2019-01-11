@@ -1,0 +1,4 @@
+virtualenv --system-site-packages -p python2.7 i2c_env
+source ./i2c_env/bin/activate
+pip install -r icoads2cds_requirements.txt
+

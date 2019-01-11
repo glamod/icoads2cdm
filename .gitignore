@@ -1,0 +1,7 @@
+*.pyc
+*.log
+*.e
+*.o
+C3S_beta_release_jobs/???-???
+i2c_py3_env
+i2c_env

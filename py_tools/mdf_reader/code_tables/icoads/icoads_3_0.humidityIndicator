@@ -1,0 +1,6 @@
+[
+{"codes":[0],"description":"measured"},
+{"codes":[1],"description":"computed"},
+{"codes":[2],"description":"iced measured"},
+{"codes":[3],"description":"iced computed"}
+]

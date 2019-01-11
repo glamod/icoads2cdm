@@ -1,0 +1,6 @@
+[
+	{"cdm_key":"longitude",																		"data_key":"Lon",													"missing":null,		"default":null,	"codetable":null,		"transform":"float_oposite"},
+	{"cdm_key":"latitude",																		"data_key":"Lat",													"missing":null,		"default":null,	"codetable":null,		"transform":null},
+	{"cdm_key":"observation_value",														"data_key":"WDir",												"missing":null,		"default":null,	"codetable":null,		"transform":null},
+	{"cdm_key":"original_value",															"data_key":"WDir",												"missing":null,		"default":null,	"codetable":null,		"transform":null}
+]

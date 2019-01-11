@@ -1,0 +1,2 @@
+SID	DCK	Configuration file	SID Description	DCK Description  ( read as tab separated: awk -F '\t' '' )
+114	992	ICOADS3_to_CDS_ships.json	NCEI GTS�	NCEI GTS: Ship Data�

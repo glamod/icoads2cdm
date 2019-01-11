@@ -1,0 +1,5 @@
+[
+{"codes":[0],"description":"Preliminary (Not yet included in an official ICOADS Release)"},
+{"codes":[1],"description":"Auxiliary (Records provided in separate data files in addition to ICOADS official Releases and Preliminary data. This also includes new data sources received, but awaiting blending into an official ICOADS Release)"},
+{"codes":[2],"description":"Full (A record included in an official ICOADS Release)"}
+]

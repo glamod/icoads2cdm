@@ -1,0 +1,11 @@
+ds	dir	description
+0	0	stationary (ship hove to)
+1	45	NE
+2	90	E
+3	135	SE
+4	180	S
+5	225	SW
+6	270	W
+7	315	NW
+8	360	N
+9	NA	unknown

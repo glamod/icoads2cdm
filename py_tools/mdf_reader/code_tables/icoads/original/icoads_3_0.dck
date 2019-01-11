@@ -1,0 +1,146 @@
+dck	description	firstyear	lastyear
+110	US Navy Marine	1945	1951
+116	US Merchant Marine	1945	1963
+117	US Navy Hourlies	1950	1964
+118	Japanese Ships No. 1 (Kobe Collection Data keyed in 1961)	1930	1953
+119	Japanese Ships No. 2 (Kobe Collection Data keyed in 1961)	1951	1961
+128	International Marine (US- or foreign-keyed ship data)	1950	1978
+143	Pacific Marine Environmental Laboratory (PMEL) Buoys	1976	1977
+144	TAO/TRITON and PIRATA Buoys (from PMEL and JAMSTEC)	1985	2004
+145	PMEL (Daily) Equatorial Moorings and Island Stations	NA	NA
+146	Global Tropical Moored Buoy Array (GTMBA) from PMEL via NOC	1977	2014
+150	Pacific (US Responsibility) HSST Netherlands Receipts	1939	1961
+151	Pacific (US Responsibility) HSST German Receipts	1862	1960
+152	Pacific (US Responsibility) HSST UK Receipts	1855	1961
+155	Indian (Netherlands Responsibility) HSST	1861	1960
+156	Atlantic (German Responsibility) HSST	1852	1961
+184	Great Britain Marine (194 extension)	1953	1961
+185	USSR Marine IGY	1957	1958
+186	USSR Ice Stations	1950	1970
+187	Japanese Whaling Fleet	1946	1956
+188	Norwegian Antarctic Whaling Factory Ships	1932	1939
+189	Netherlands Marine	1939	1959
+192	Deutsche Seewarte Marine	1855	1939
+193	Netherlands Marine	1800	1938
+194	Great Britain Marine	1856	1955
+195	US Navy Ships Logs	1941	1946
+196	Deutsche Seewarte Marine (192 extension)	1946	1954
+197	Danish (and Other) Marine (Polar)	1871	1956
+201	All Ships (1930 code)	1854	1920
+202	All Ships (1921 code)	1915	1938
+203	Selected Ships (1930 code)	1929	1961
+204	British Navy (HM) Ships (1930 code)	1929	1949
+205	Scottish Fishery Cruisers MARIDS (1930 code)	1945	1956
+206	Ocean Weather Stations (OWS) (1930 code)	1947	1948
+207	Selected Ships (1930 code)	1945	1953
+208	Light Vessels	1949	1956
+209	Selected Ships (including some foreign ships)	1951	1956
+210	OWS (including Dutch 'J')	1950	1956
+211	Scottish Fishery Cruisers MARIDS	1956	1961
+212	Light Vessels	1956	1961
+213	Selected Ships	1953	1962
+214	OWS	1956	1961
+215	German Marine	1860	1940
+216	UK Merchant Ship Logbooks (METFORMS; keyed in 1996)	1935	1939
+218	US OWS	1953	1963
+221	MARIDS and Trawlers	1962	1988
+222	Light Vessels	1961	NA
+223	Selected Ships	1962	1982
+224	OWS	1976	1981
+225	Norwegian Format	1953	NA
+226	OWS (1949 code)	1949	1952
+227	Selected Ships	1947	1954
+229	British Navy (HM) Ships	1953	1981
+230	International Maritime Met. Punched Card (IMMPC) Data	1962	1971
+233	Selected Ships	1982	1994
+234	OWS	1982	1994
+235	RIGG, PLAT, Automatic Weather-Observing System (AWS; buoy)	1982	NA
+239	British Navy (HM) Ships	1953	1993
+241	MetO GTS Receipts (primarily SHIP code; from MDB format)	NA	NA
+242	MetO GTS Receipts (SHIP code; raw messages from MetDb)	NA	NA
+245	Royal Navy Ship's Logs 1938-47 (keyed by 2007)	1936	1955
+246	Atmospheric Circ. Reconstrucitons over the Earth (ACRE) digitized Date: Print or Published Expeditions (held at Met Office)	1699	1940
+247	Atmospheric Circ. Reconstructions over the Earth (ACRE) digitized data: Challenger Expedition	1872	1876
+248	English East India Co. (EEIC) Ship Logs	1789	1834
+249	Extended WW1 UK Royal Navy Ship's Logs (OldWeather)	1912	1925
+254	Int. Maritime Met. (IMM) Data (foreign or unknown origin)	1860	1994
+255	Undocumented TDF-11 Decks or MDB Series	1857	1994
+281	US Navy Monthly Aerological Record (MAR)	1926	1945
+500	Gulf Offshore Weather Observing Network (GOWON) (plat data)	NA	NA
+555	US Navy Fleet Num. Met. and Oceano. Center (FNMOC; Monterey) Telecom.	1926	1945
+666	Tuna Boats	1970	1975
+667	Inter-American Tropical Tuna Commission (IATTC)	1971	1997
+700	UK Met. Office GTS BUFR Data	2000	2012
+701	US Maury Collection	1784	1863
+702	Norwegian Logbook Collection	1784	1863
+703	US Lightship Collections	1931	1980
+704	US Marine Meteorological Journals Collection (1878-94)	1878	1894
+705	US Merchant Marine Collection (1912-46) (500 series)	1910	1946
+706	US Merchant Marine Collection (1912-46) (600 series)	1910	1944
+707	US Merchant Marine Collection (1912-46) (700 series)	1913	1941
+708	US Navy Marine (US keyed ship data; hourly METAR format	2001	2012
+709	US Navy Marine (IMMA formatted by US Navy)	2004	2006
+710	US Arctic Logbooks (OldWeather	1870	1946
+711	Weather Detective Crowdsourcing	1889	1899
+714	Canadian Oceanography and Scientific Data (OSD; formerly ISDM/MEDS) Buoys	1978	2014
+715	German Deep Drifter Data (via ISDM; originally from IfM/Univ. Kiel)	NA	NA
+720	Deutscher Wetterdienst (DWD) Marine Meteorological Archive	1868	1988
+721	German Maury collection	1845	1868
+730	Climatological Database for the World's Oceans (CLIWOC)	1662	1855
+731	Russian S.O. Makarov Collection	1662	1855
+732	Russian Marine Met. Data Set (MORMET) (received at NCAR)	1888	1995
+733	Russian AARI North Pole (NP) Stations	1937	1991
+734	Arctic Drift Stations	1893	1924
+735	Russian Research Vessel (R/V) Digitization	1936	2000
+736	Byrd Antarctic Expedition (keyed by Hollings Scholars)	1929	1934
+740	Research Vessel (R/V) Data Quality-Evaluated by FSU/COAPS	1990	2014
+749	First GARP Global Experiment (FGGE) Level IIb	1978	1979
+750	Australian Navy Vessels: SST data (1972 - 77)	1974	1977
+761	Japanese Whaling Ship Data (CDMP/MIT digitization)	1946	1984
+762	Japanese Kobe Collection Data (keyed after decks 118-119)	1889	1940
+780	NOAA / NCEI World Ocean Database (WOD) (and formerly Atlas, WOA)	1770	2014
+781	Chinese/Global Ocean Data Archeology and Rescue (GODAR) Ships	1968	1993
+782	Global Ocean Suface Underway Data (GOSUD)	1980	2014
+792	US Natl. Cntrs. for Environ. Pred. (NCEP) BUFR GTS: Ship Data	1998	2014
+793	NCEP BUFR GTS: Buoy Data (transmitted in FM 13 'SHIP' code)	1998	2014
+794	NCEP BUFR GTS: Buoy Data (transmitted in FM 18 'BUOY' code)	1998	2014
+795	NCEP BUFR GTS: Coastal-Marine Automated Network (C-MAN code) Data	2008	2014
+796	NCEP BUFR GTS: Miscellaneous (OSV, plat, and rig) Data	NA	NA
+797	NCEP BUFR GTS: CREX code	2008	2014
+849	First GARP Global Experiment (FGGE)	1978	1979
+850	German FGGE	1978	1979
+874	Shipboard Environmental (Data) Acquisition System (SEAS)	1995	2014
+875	US TurboWin (e-Logbook) Voluntary Observing Ship (VOS) Receipts	2012	2014
+876	NDBC Data (High Capability Buoy; HCB)	1972	1977
+877	NDBC Data (Limited Capability Buoy; LCB)	1973	1976
+878	NDBC Data (Prototype Environmental Buoy; PEB)	1974	1978
+879	NDBC Data (5-meter Continental Shelf Buoys)	1974	1978
+880	NDBC Data (10-meter Continental Shelf Buoys)	1976	1978
+881	NDBC Data (Offshore Platforms)	1976	1977
+882	NDBC Data	1978	1979
+883	US National Data Buoy Center (NDBC) Data (latest version from NCDC)	1980	2012
+888	US Air Force Global Weather Central (GWC)	1973	1997
+889	Autodin (US Dept. of Defense Automated Digital Network)	1972	1995
+890	US National Meteorological Center (NMC, now NCEP) Data (obsolete)	NA	NA
+891	US National Oceanographic Data Center (NODC) Surface Data	NA	NA
+892	US Natl. Cntrs. for Environ. Pred. (NCEP) Ship Data	1980	1997
+893	NCEP Moored Buoy Data	1986	1987
+894	NCEP Drifting Buoy Data	NA	NA
+895	NCEP Coastal-Marine Automated Network (C-MAN) Data	NA	NA
+896	NCEP Miscellaneous (OSV, plat, and rig) Data	1980	1997
+897	Eltanin	1962	1963
+898	Japanese	1954	1974
+899	South African Whaling	1900	1955
+900	Australian	1931	1979
+901	FOSDIC Reconstructions (card images from 16mm film)	1931	1979
+902	Great Britain Marine (184 extension)	1957	1961
+926	International Maritime Meteorological (IMM) Data	1954	2014
+927	International Marine (US- or foreign-keyed ship data)	1970	2012
+928	Same as 927 including Ocean Station Vessels (OSV)	1970	1974
+992	NCEI GTS: Ship Data	1999	2014
+993	NCEI GTS: Buoy Data (transmitted in FM 13 'SHIP' code)	1999	2014
+994	NCEI GTS: Buoy Data (transmitted in FM 18 'BUOY' code)	1999	2014
+995	NCEI GTS: Coastal-Marine Automated Network (C-MAN code) Data	1999	2014
+996	NCEI GTS: Miscellaneous (OSV, plat, and rig) Data	NA	NA
+997	NCEI GTS: CREX code	NA	NA
+999	US Air Force Environ. Technical Applications Center (ETAC)	1967	1969

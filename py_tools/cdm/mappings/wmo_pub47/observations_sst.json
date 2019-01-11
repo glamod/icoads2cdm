@@ -1,0 +1,6 @@
+[
+	{"cdm_key":"z_coordinate",																"data_key":"sstD1",	    						"missing":null,		"default":null,		"codetable":null,		"transform":null},
+	{"cdm_key":"observation_height_above_stations_surface",		"data_key":"sstD1",	    						"missing":null,		"default":null,		"codetable":null,		"transform":null},
+	{"cdm_key":"sensor_id",																		"data_key":"uid,record,st1",				"missing":null,		"default":null,		"codetable":null,		"transform":"build_sensor_id"},
+	{"cdm_key":"sensor_automation_status",										"data_key":"atm",										"missing":null,		"default":5,			"codetable":null,		"transform":null}
+]

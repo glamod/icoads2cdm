@@ -1,0 +1,11 @@
+vv	distance	description
+90	50	less than 0.05 kilometer
+91	50	0.05 km
+92	200	0.2 km
+93	500	0.5 km
+94	1000	1 km
+95	2000	2 km
+96	4000	4 km
+97	10000	10 km
+98	20000	20 km
+99	50000	50 km or more

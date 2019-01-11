@@ -1,0 +1,7 @@
+tob	code	description
+0	AN	Aneroid barometer (issued by Port Meteorological Officer or Meteorological Agency)
+1	DA	Digital Aneroid Barometer
+2	MER	Mercury Barometer
+3	SAN	Ship's Aneroid Barometer
+4	ELE	electronic digital barometer
+5	OT	Other

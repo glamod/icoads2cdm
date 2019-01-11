@@ -1,0 +1,7 @@
+[
+	{"cdm_key":"station_name",                                "data_key":"name",                      "missing":null,"default":null,"codetable":null,"transform":null},
+	{"cdm_key":"platform_sub_type",														"data_key":"vssl",											"missing":null,"default":null,"codetable":null,"transform":null},
+	{"cdm_key":"primary_station_id",													"data_key":"call",											"missing":null,"default":null,"codetable":null,"transform":null},
+	{"cdm_key":"station_record_number",												"data_key":"record",										"missing":null,"default":1,		"codetable":null,"transform":null},
+	{"cdm_key":"report_duration",                             "data_key":"freq",                      "missing":null,"default":11,	"codetable":null,"transform":null}
+]

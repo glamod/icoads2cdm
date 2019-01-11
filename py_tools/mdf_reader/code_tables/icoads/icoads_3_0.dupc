@@ -1,0 +1,5 @@
+[
+{"codes":[0],"description":"GTS and logbook match with SLP and SST match"},
+{"codes":[1],"description":"GTS and logbook match without SLP and SST match"},
+{"codes":[2],"description":"no GTS and logbook match was encountered"}
+]

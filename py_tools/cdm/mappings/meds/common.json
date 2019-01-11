@@ -1,0 +1,6 @@
+[
+	{"cdm_key":"primary_station_id",													"data_key":"Identifier",		"missing":null,		"default":null,	"codetable":null,"transform":null},
+	{"cdm_key":"longitude",																		"data_key":"Lon",						"missing":null,		"default":null,	"codetable":null,"transform":"float_oposite"},
+	{"cdm_key":"latitude",																		"data_key":"Lat",						"missing":null,		"default":null,	"codetable":null,"transform":null},
+	{"cdm_key":"report_timestamp",														"data_key":"Odate,Otime",		"missing":null,		"default":null,	"codetable":null,"transform":"dtime_meds2cdm"}
+]

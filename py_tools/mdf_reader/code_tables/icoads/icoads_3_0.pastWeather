@@ -1,0 +1,12 @@
+[
+{"codes":[0],"description":"cloud covering one half or less of the sky throughout the period"},
+{"codes":[1],"description":"cloud covering more than one half of the sky during part of the period and covering one half or less during part of the period"},
+{"codes":[2],"description":"cloud covering more than one half of the sky throughout the period"},
+{"codes":[3],"description":"sandstorm, dust storm or blowing snow"},
+{"codes":[4],"description":"fog, ice fog, or thick haze (US includes thick smoke)"},
+{"codes":[5],"description":"drizzle"},
+{"codes":[6],"description":"rain"},
+{"codes":[7],"description":"snow, or rain and snow mixed"},
+{"codes":[8],"description":"shower"},
+{"codes":[9],"description":"thunderstorm with or without precipitation"}
+]

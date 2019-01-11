@@ -1,0 +1,7 @@
+[
+{"codes":[0],"description":"nearest whole hour"},
+{"codes":[1],"description":"hour to tenths"},
+{"codes":[2],"description":"hour plus minutes"},
+{"codes":[3],"description":"high resolution (e.g., hour to hundredths)"},
+{"codes":[4],"description":"Daily (assumed local solar midday)"}
+]

@@ -1,0 +1,11 @@
+[
+{"codes":[0],"description":"Increasing, then decreasing; atmopsheric pressure the same or higher than three hours ago"},
+{"codes":[1],"description":"Increasing, then steady; or increasing, then increasing more slowly - Atmospheric pressure now higher than three hours ago"},
+{"codes":[2],"description":"Increasing (steadily or unsteadily) - Atmospheric pressure now higher than three hours ago"},
+{"codes":[3],"description":"Decreasing or steady, then increasing; or increasing, then increasing more rapidly - Atmospheric pressure now higher than three hours ago"},
+{"codes":[4],"description":"Steady; atmopsheric pressure the same as three hours ago"},
+{"codes":[5],"description":"Decreasing, then increasing; atmospheric pressure the same ot lower than three hours ago"},
+{"codes":[6],"description":"Decreasing, then steady; or decreasing, then decreasing more slowly - Atmospheric pressure now lower than three hours ago"},
+{"codes":[7],"description":"Decreasing (steadily or unsteadily) - Atmospheric pressure now lower than three hours ago"},
+{"codes":[8],"description":"Steady or increasing, then decreasing; or decreasing, then decreasing more rapidly - Atmospheric pressure now lower than three hours ago"}
+]

@@ -1,0 +1,2 @@
+SID	DCK	Configuration file	SID Description	DCK Description  ( read as tab separated: awk -F '\t' '' )
+063	714	ICOADS3_to_CDS_063-714.json	"Canadian OSD (formerly ISDM/MEDS) Buoys (July 2005 archive extended by Dec. 2008, & by May 2015 for 2008-14)�"	Canadian Oceanography and Scientific Data (OSD; formerly ISDM/MEDS) Buoys�

@@ -1,0 +1,12 @@
+[
+{"codes":[90],"description":"less than 0.05 kilometer","aux_info":{"distance (m)":50}},
+{"codes":[91],"description":"0.05 km","aux_info":{"distance (m)":50}},
+{"codes":[92],"description":"0.2 km","aux_info":{"distance (m)":200}},
+{"codes":[93],"description":"0.5 km","aux_info":{"distance (m)":500}},
+{"codes":[94],"description":"1 km","aux_info":{"distance (m)":1000}},
+{"codes":[95],"description":"2 km","aux_info":{"distance (m)":2000}},
+{"codes":[96],"description":"4 km","aux_info":{"distance (m)":4000}},
+{"codes":[97],"description":"10 km","aux_info":{"distance (m)":10000}},
+{"codes":[98],"description":"20 km","aux_info":{"distance (m)":20000}},
+{"codes":[99],"description":"50 km or more","aux_info":{"distance (m)":50000}}
+]

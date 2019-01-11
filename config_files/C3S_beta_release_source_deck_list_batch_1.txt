@@ -1,0 +1,13 @@
+SID	DCK	Configuration file	SID Description	DCK Description  ( read as tab separated: awk -F '\t' '' )
+090	221	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	MARIDS and Trawlers
+090	223	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Selected Ships
+090	224	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	OWS
+090	229	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	British Navy (HM) Ships�
+090	233	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Selected Ships�
+090	234	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	OWS�
+090	239	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	British Navy (HM) Ships�
+090	254	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Int. Maritime Met. (IMM) Data (foreign or unknown origin)�
+090	255	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Undocumented TDF-11 Decks or MDB Series�
+110	700	ICOADS3_to_CDS_ships.json	UK Met. Office VOSClim GTS BUFR Data�	UK Met. Office GTS BUFR Data�
+146	700	ICOADS3_to_CDS_ships.json	UK Met. Office & NOC: VOSClim-compliant GTS BUFR Data: Historical ship/buoy (FM 13)�	UK Met. Office GTS BUFR Data�
+161	720	ICOADS3_to_CDS_ships.json	DWD German Light Vessels (receipts in 2014)�	Deutscher Wetterdienst (DWD) Marine Met. Archive�

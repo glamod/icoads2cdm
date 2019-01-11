@@ -1,0 +1,33 @@
+kov	code	description
+0	BA	Barge
+1	BC	Bulk Carrier
+2	CA	Cable ship
+3	CG	Coast Guard Ship
+4	CS	Container Ship
+5	DR	Dredger
+6	FE	Passenger ferries
+7	FP	Floating production and storage units
+8	FV	Other Fishing Vessel
+9	GC	General Cargo
+10	GT	Gas Tanker
+11	IC	Icebreaking vessel
+12	IF	Inshore Fishing Vessel
+13	LC	Livestock carrier
+14	LT	Liquid Tanker
+15	LV	Light Vessel
+16	MI	Mobile installation including mobile offshore drill ships, jack-up rigs and semi-submersibles
+17	MS	Military Ship
+18	OT	Other
+19	OW	Ocean Weather Ship
+20	PI	Pipe layer
+21	PS	Passenger ships and cruise liners
+22	RF	Ro/Ro Ferry
+23	RR	Ro/Ro Cargo
+24	RS	Refrigerated cargo ships including banana ships
+25	RV	Research Vessel
+26	SA	Large sailing vessels
+27	SV	Support Vessel
+28	TR	Trawler
+29	TU	Tug
+30	VC	Vehicle carriers
+31	YA	Yacht / Pleasure Craft

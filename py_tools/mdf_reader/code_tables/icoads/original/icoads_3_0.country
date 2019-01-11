@@ -1,0 +1,202 @@
+code	country	countrycode
+0	Afghanistan	AF
+1	Albania	AL
+2	Algeria	DZ
+3	Andorra	AD
+4	Angola	AO
+5	Antigua and Barbuda	AG
+6	Argentina	AR
+7	Armenia	AM
+8	Aruba	AW
+9	Australia	AU
+10	Austria	AT
+11	Azerbaijan	AZ
+12	Bahamas	BS
+13	Bahrain	BH
+14	Bangladesh	BD
+15	Barbados	BB
+16	Belarus	BY
+17	Belgium	BE
+18	Belize	BZ
+19	Benin	BJ
+20	Bhutan	BT
+21	Bolivia	BO
+22	Bosnia and Herzegovina	BA
+23	Botswana	BW
+24	Brazil	BR
+25	Brunei Darussalam	BN
+26	Bulgaria	BG
+27	Burkina Faso	BF
+28	Burundi	BI
+29	Cambodia	KH
+30	Cameroon	CM
+31	Canada	CA
+32	Cape Verde	CV
+33	Central African Republic	CF
+34	Chad	TD
+35	Chile	CL
+36	China	CN
+37	Columbia	CO
+38	Comoros	KM
+39	Congo	CG
+40	The Democratic Republic of the Congo CD	
+41	Costa Rica	CR
+42	Cote d'Ivoire	CI
+43	Croatia	HR
+44	Cuba	CU
+45	Cyprus	CY
+46	Czech Republic	CZ
+47	Denmark	DK
+48	Djibouti	DJ
+49	Dominica	DM
+50	Dominican Republic	DO
+51	Ecuador	EC
+52	Egypt	EG
+53	El Salvador	SV
+54	Equatorial Guinea	GQ
+55	Eritrea	ER
+56	Estonia	EE
+57	Ethiopia	ET
+58	Fiji	FJ
+59	Finland	FI
+60	France	FR
+61	Gabon	GA
+62	Gambia	GM
+63	Georgia	GE
+64	Germany	DE
+65	Ghana	GH
+66	Greece	GR
+67	Grenada	GD
+68	Guatemala	GT
+69	Guinea	GN
+70	Guinea Bissau	GW
+71	Guyana	GY
+72	Haiti	HT
+73	Honduras	HN
+74	Hong Kong	HK
+75	Hungary	HU
+76	Iceland	IS
+77	India	IN
+78	Indonesia	ID
+79	Islamic Republic of Iran	IR
+80	Iraq	IQ
+81	Ireland	IE
+82	Israel	IL
+83	Italy	IT
+84	Jamaica	JM
+85	Japan	JP
+86	Jordan	JO
+87	Kazakhstan	KZ
+88	Kenya	KE
+89	Kiribati	KI
+90	Republic of Korea	KR
+91	Kuwait	KW
+92	Kyrgyzstan	KG
+93	Lao Peoples Democratic Republic	LA
+94	Latvia	LV
+95	Lebanon	LB
+96	Lesotho	LS
+97	Liberia	LR
+98	Libyan Arab Jamahiriya	LY
+99	Lithuania	LT
+100	Luxembourg	LU
+101	The Former Yugoslav Republic of Macedonia	MK
+102	Madagascar	MG
+103	Malawi	MW
+104	Malaysia	MY
+105	Maldives	MV
+106	Mali	ML
+107	Malta	MT
+108	Marshal Islands	MH
+109	Mauritania	MR
+110	Mauritius	MU
+111	Mexico	MX
+112	Federated States of Micronesia	FM
+113	Republic of Moldova	MD
+114	Monaco	MC
+115	Mongolia	MN
+116	Morocco	MA
+117	Mozambique	MZ
+118	Myanmar	MM
+119	Namibia	NA
+120	Nauru	NR
+121	Nepal	NP
+122	Netherlands	NL
+123	Netherlands Antilles	AN
+124	New Zealand	NZ
+125	Nicaragua	NI
+126	Niger	NE
+127	Nigeria	NG
+128	Democratic People's Republic of Korea	KP
+129	Norway	NO
+130	Oman	OM
+131	Pakistan	PK
+132	Palau	PW
+133	Occupied Palestinian Territory	PS
+134	Panama	PA
+135	Papua New Guinea	PG
+136	Paraguay	PY
+137	Peru	PE
+138	Philippines	PH
+139	Poland	PL
+140	Portugal	PT
+141	Qatar	QA
+142	Romania	RO
+143	Russian Federation	RU
+144	Rwanda	RW
+145	Saint Kitts and Nevis	KN
+146	Saint Lucia	LC
+147	Saint Vincent and the Grenadines	VC
+148	Samoa	WS
+149	San Marino	SM
+150	Sao Tome And Principe	ST
+151	Saudi Arabia	SA
+152	Senegal	SN
+153	Serbia and Montenegro	CS
+154	Seychelles	SC
+155	Sierra Leone	SL
+156	Singapore	SG
+157	Slovakia	SK
+158	Slovenia	SI
+159	Solomon Islands	SB
+160	Somalia	SO
+161	South Africa	ZA
+162	Spain	ES
+163	Sri Lanka	LK
+164	Sudan	SD
+165	Surinam	SR
+166	Swaziland	SZ
+167	Sweden	SE
+168	Switzerland	CH
+169	Syrian Arab Republic	SY
+170	Tajikistan	TJ
+171	United Republic of Tanzania	TZ
+172	Thailand	TH
+173	Timor - Leste	TL
+174	Togo	TG
+175	Tonga	TO
+176	Trinidad and Tobago	TT
+177	Tunisia	TN
+178	Turkey	TR
+179	Turkmenistan	TM
+180	Tuvala	TV
+181	Uganda	UG
+182	Ukraine	UA
+183	United Arab Emirates	AE
+184	United Kingdom	GB
+185	United States	US
+186	Uruguay	UY
+187	Uzbekistan	UZ
+188	Vanuatu	VU
+189	Vatican City	VA
+190	Venezuela	VE
+191	Viet Nam	VN
+192	Yemen	YE
+193	Zambia	ZM
+194	Zimbabwe	ZW
+195	East Germany	DD
+196	Yugoslavia	CS
+197	Soviet Union	RU
+198	New Caledonia	NC
+199	None (self recruited)	ZY
+200	None (third party support)	ZZ

@@ -1,0 +1,11 @@
+[
+{"codes":[0],"description":"meter per second, estimated"},
+{"codes":[1],"description":"meter per second, obtained from anemometer (measured)"},
+{"codes":[2],"description":"estimated (original units unknown)"},
+{"codes":[3],"description":"knot, estimated"},
+{"codes":[4],"description":"knot, obtained from anemometer (measured)"},
+{"codes":[5],"description":"Beaufort force (based on documentation)"},
+{"codes":[6],"description":"estimated (original units unknown) or unknown method "},
+{"codes":[7],"description":"measured (original units unknown)"},
+{"codes":[8],"description":"high-resolution measurement (e.g., hundredths of a meter per second)"}
+]

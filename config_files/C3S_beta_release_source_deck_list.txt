@@ -1,0 +1,93 @@
+SID	DCK	Configuration file	SID Description	DCK Description  ( read as tab separated: awk -F '\t' '' )
+090	221	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	MARIDS and Trawlers
+090	223	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Selected Ships
+090	224	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	OWS
+090	229	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	British Navy (HM) Ships�
+090	233	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Selected Ships�
+090	234	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	OWS�
+090	239	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	British Navy (HM) Ships�
+090	254	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Int. Maritime Met. (IMM) Data (foreign or unknown origin)�
+090	255	ICOADS3_to_CDS_ships.json	UK Met. Ofc. (MetO) Main Marine Data Bank (MDB): Flatfile 1 (no cardimage)�	Undocumented TDF-11 Decks or MDB Series�
+070	667	ICOADS3_to_CDS_ships.json	Inter-American Tropical Tuna Comm. (IATTC) Porpoise Obs. Logs�	Inter-American Tropical Tuna Commission (IATTC)�
+071	667	ICOADS3_to_CDS_ships.json	IATTC Fishing Logs�	Inter-American Tropical Tuna Commission (IATTC)�
+110	700	ICOADS3_to_CDS_ships.json	UK Met. Office VOSClim GTS BUFR Data�	UK Met. Office GTS BUFR Data�
+146	700	ICOADS3_to_CDS_ships.json	UK Met. Office & NOC: VOSClim-compliant GTS BUFR Data: Historical ship/buoy (FM 13)�	UK Met. Office GTS BUFR Data�
+109	708	ICOADS3_to_CDS_ships.json	US Navy Marine (US-keyed ship data; hourly METAR format)�	US Navy Marine (US-keyed ship data; hourly METAR format)�
+157	709	ICOADS3_to_CDS_ships.json	US Navy Marine (IMMA formatted by US Navy)�	US Navy Marine (IMMA formatted by US Navy)�
+063	714	ICOADS3_to_CDS_063-714.json	"Canadian OSD (formerly ISDM/MEDS) Buoys (July 2005 archive extended by Dec. 2008, & by May 2015 for 2008-14)�"	Canadian Oceanography and Scientific Data (OSD; formerly ISDM/MEDS) Buoys�
+161	720	ICOADS3_to_CDS_ships.json	DWD German Light Vessels (receipts in 2014)�	Deutscher Wetterdienst (DWD) Marine Met. Archive�
+046	732	ICOADS3_to_CDS_ships.json	International Maritime Met. (IMM) Tape Archive (1982-)�	Russian Marine Met. Data Set (MORMET) (rec�d at NCAR)�
+057	732	ICOADS3_to_CDS_ships.json	Russian Marine Meteorological Data Set (MORMET) (rec'd at NCAR)�	Russian Marine Met. Data Set (MORMET) (rec�d at NCAR)�
+064	735	ICOADS3_to_CDS_ships.json	Russian Research Vessel (R/V) Digitization: Marine Surface�	Russian Research Vessel (R/V) Digitization�
+065	735	ICOADS3_to_CDS_ships.json	Russian Research Vessel (R/V) Digitization: Marine Actinometric�	Russian Research Vessel (R/V) Digitization�
+115	761	ICOADS3_to_CDS_ships.json	Japanese Whaling Ship Data (CDMP digitization)�	Japanese Whaling Ship Data (CDMP/MIT digitization)�
+137	780	ICOADS3_to_CDS_ships.json	NODC/OCL 2005 World Ocean Database (WOD05) updated through 13 Dec. 2007�	"NOAA/NCEI World Ocean Database (WOD) (and formerly Atlas, WOA)�"
+149	780	ICOADS3_to_CDS_ships.json	NOAA/NCEI 2013 World Ocean Database (WOD13) updated through 24-02-2015�	"NOAA/NCEI World Ocean Database (WOD) (and formerly Atlas, WOA)�"
+143	781	ICOADS3_to_CDS_ships.json	Chinese/Global Ocean Data Archeology and Rescue (GODAR) Ships�	Chinese/Global Ocean Data Archeology and Rescue (GODAR) Ships�
+159	782	ICOADS3_to_CDS_ships.json	Global Ocean Surface Underway Data (GOSUD v2) from NCEI in WOD format received 19 May 2015�	Global Ocean Surface Underway Data (GOSUD)�
+163	782	ICOADS3_to_CDS_ships.json	GOSUD v3 near real-time data from NCEI in WOD format received 30 April 2015�	Global Ocean Surface Underway Data (GOSUD)�
+164	782	ICOADS3_to_CDS_ships.json	GOSUD delayed-mode French research vessels and sailing ship data from NCEI in WOD format received 30 April 2015�	Global Ocean Surface Underway Data (GOSUD)�
+100	792	ICOADS3_to_CDS_ships.json	NCEP BUFR GTS: Operational Tanks: Converted from Original Message�	US Natl. Cntrs. for Environ. Pred. (NCEP) BUFR GTS: Ship Data�
+103	792	ICOADS3_to_CDS_ships.json	NCEP BUFR GTS: Dumped Data: Converted from BUFR�	US Natl. Cntrs. for Environ. Pred. (NCEP) BUFR GTS: Ship Data�
+079	888	ICOADS3_to_CDS_ships.json	US Air Force Global Weather Central (GWC): DATSAV2 format�	US Air Force Global Weather Central (GWC)�
+022	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+025	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+027	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+028	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+030	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Period of Record�	Autodin (US Dept. of Defense Automated Digital Network)�
+032	889	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	Autodin (US Dept. of Defense Automated Digital Network)�
+033	889	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	Autodin (US Dept. of Defense Automated Digital Network)�
+034	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+035	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+036	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+038	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+039	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+040	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+042	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+043	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+029	892	ICOADS3_to_CDS_ships.json	"NCDC: US Nat. Met. Center (NMC, now NCEP) Reconversion (1980-92)�"	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+032	892	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+033	892	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+077	892	ICOADS3_to_CDS_ships.json	NCDC: US National Cntrs. for Environ. Pred. (NCEP) Reconversion (1994-97)�	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+029	896	ICOADS3_to_CDS_ships.json	"NCDC: US Nat. Met. Center (NMC, now NCEP) Reconversion (1980-92)�"	"NCEP Miscellaneous (OSV, plat, and rig) Data�"
+025	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Maritime Meteorological (IMM) Data�
+027	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Maritime Meteorological (IMM) Data�
+028	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Maritime Meteorological (IMM) Data�
+030	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Period of Record�	International Maritime Meteorological (IMM) Data�
+032	926	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Maritime Meteorological (IMM) Data�
+033	926	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Maritime Meteorological (IMM) Data�
+034	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+035	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+036	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+037	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+038	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+039	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+040	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+041	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+046	926	ICOADS3_to_CDS_ships.json	International Maritime Met. (IMM) Tape Archive (1982-)�	International Maritime Meteorological (IMM) Data�
+047	926	ICOADS3_to_CDS_ships.json	International Maritime Met. (IMM) Tape Archive (1982-)�	International Maritime Meteorological (IMM) Data�
+059	926	ICOADS3_to_CDS_ships.json	UK IMM Corrections (1982-89)�	International Maritime Meteorological (IMM) Data�
+060	926	ICOADS3_to_CDS_ships.json	French International Maritime Met. (IMM) Corrected�	International Maritime Meteorological (IMM) Data�
+072	926	ICOADS3_to_CDS_ships.json	IMM Tape Archive from WMO Global Collecting Centre (GCC) (1994 format)�	International Maritime Meteorological (IMM) Data�
+112	926	ICOADS3_to_CDS_ships.json	IMM Tape Archive from WMO GCC (IMMT-2 or IMMT-3 format)�	International Maritime Meteorological (IMM) Data�
+022	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+025	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+027	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+028	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+030	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Period of Record�	International Marine (US- or foreign-keyed ship data)
+032	927	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Marine (US- or foreign-keyed ship data)
+033	927	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Marine (US- or foreign-keyed ship data)
+034	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+035	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+036	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+037	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+038	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+039	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+040	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+041	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+042	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+043	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+044	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+078	927	ICOADS3_to_CDS_ships.json	NCDC: US-keyed Logbook Data Reconversion (TD-9972; keyed during 1996-97)�	International Marine (US- or foreign-keyed ship data)
+113	927	ICOADS3_to_CDS_ships.json	International Marine (US-keyed ship data)�	International Marine (US- or foreign-keyed ship data)
+114	992	ICOADS3_to_CDS_ships.json	NCEI GTS�	NCEI GTS: Ship Data�

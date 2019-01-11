@@ -1,0 +1,13 @@
+sstmethod	sim	description
+0	BU	bucket
+1	C	condenser inlet (intake)
+2	TT	trailing thermistor
+3	HC	hull contact sensor
+4	HT	through hull sensor
+5	RAD	radiation thermometer
+6	BTT	bait tanks thermometer
+7	OT	others
+9	NA	unknown or non-bucket
+10	NA	implied bucket [note: applicable to early ICOADS data]
+11	NA	reversing thermometer or mechanical sensor
+12	NA	electronic sensor

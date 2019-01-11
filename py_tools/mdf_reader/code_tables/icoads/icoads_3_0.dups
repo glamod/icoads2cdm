@@ -1,0 +1,17 @@
+[
+{"codes":[0],"description":"Unique"},
+{"codes":[1],"description":"Best duplicate"},
+{"codes":[2],"description":"Best duplicate with substitution"},
+{"codes":[3],"description":"Worse duplicate, uncertain: uncertain weather element match with hour cross"},
+{"codes":[4],"description":"Worse duplicate, uncertain: uncertain weather element match with no cross"},
+{"codes":[5],"description":"Worse duplicate, uncertain: uncertain weather element match with day cross"},
+{"codes":[6],"description":"Worse duplicate, uncertain: uncertain time \/ space with ID mismatch (unused until 1950)"},
+{"codes":[7],"description":"Worse duplicate, uncertain: certain weather element match with hour cross"},
+{"codes":[8],"description":"Worse duplicate, certain: certain weather element match with no cross"},
+{"codes":[9],"description":"Worse duplicate, certain: combined DUPS 4 and 6"},
+{"codes":[10],"description":"Worse duplicate, certain: combined DUPS 6 and 8"},
+{"codes":[11],"description":"Worse duplicate, certain: time \/ space \/ ID match"},
+{"codes":[12],"description":"Worse duplicate, certain: combined DUPS 4 and 11"},
+{"codes":[13],"description":"Worse duplicate, certain: combined DUPS 8 and 11"},
+{"codes":[14],"description":"Automatic data rejection"}
+]

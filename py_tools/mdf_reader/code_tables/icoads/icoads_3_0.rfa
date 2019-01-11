@@ -1,0 +1,5 @@
+[
+{"codes":[0],"description":"Intermediate (i.e. Retain in Intermediate data file, reject from Final dataset)"},
+{"codes":[1],"description":"Final (i.e. Retain in both Intermediate and Final datasets)"},
+{"codes":[2],"description":"Reject (i.e. Reject from both Intermediate and Final datasets)"}
+]

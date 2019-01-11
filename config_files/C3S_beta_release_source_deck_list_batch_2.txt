@@ -1,0 +1,61 @@
+SID	DCK	Configuration file	SID Description	DCK Description  ( read as tab separated: awk -F '\t' '' )
+022	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+025	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+027	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+028	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	Autodin (US Dept. of Defense Automated Digital Network)�
+030	889	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Period of Record�	Autodin (US Dept. of Defense Automated Digital Network)�
+032	889	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	Autodin (US Dept. of Defense Automated Digital Network)�
+033	889	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	Autodin (US Dept. of Defense Automated Digital Network)�
+034	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+035	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+036	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+038	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+039	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+040	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+042	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+043	889	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	Autodin (US Dept. of Defense Automated Digital Network)�
+029	892	ICOADS3_to_CDS_ships.json	"NCDC: US Nat. Met. Center (NMC, now NCEP) Reconversion (1980-92)�"	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+032	892	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+033	892	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+077	892	ICOADS3_to_CDS_ships.json	NCDC: US National Cntrs. for Environ. Pred. (NCEP) Reconversion (1994-97)�	US Natl. Centers for Environmental Pred. (NCEP) Ship Data�
+029	896	ICOADS3_to_CDS_ships.json	"NCDC: US Nat. Met. Center (NMC, now NCEP) Reconversion (1980-92)�"	"NCEP Miscellaneous (OSV, plat, and rig) Data�"
+025	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Maritime Meteorological (IMM) Data�
+027	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Maritime Meteorological (IMM) Data�
+028	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Maritime Meteorological (IMM) Data�
+030	926	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Period of Record�	International Maritime Meteorological (IMM) Data�
+032	926	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Maritime Meteorological (IMM) Data�
+033	926	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Maritime Meteorological (IMM) Data�
+034	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+035	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+036	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+037	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+038	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+039	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+040	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+041	926	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Maritime Meteorological (IMM) Data�
+046	926	ICOADS3_to_CDS_ships.json	International Maritime Met. (IMM) Tape Archive (1982-)�	International Maritime Meteorological (IMM) Data�
+047	926	ICOADS3_to_CDS_ships.json	International Maritime Met. (IMM) Tape Archive (1982-)�	International Maritime Meteorological (IMM) Data�
+059	926	ICOADS3_to_CDS_ships.json	UK IMM Corrections (1982-89)�	International Maritime Meteorological (IMM) Data�
+060	926	ICOADS3_to_CDS_ships.json	French International Maritime Met. (IMM) Corrected�	International Maritime Meteorological (IMM) Data�
+072	926	ICOADS3_to_CDS_ships.json	IMM Tape Archive from WMO Global Collecting Centre (GCC) (1994 format)�	International Maritime Meteorological (IMM) Data�
+112	926	ICOADS3_to_CDS_ships.json	IMM Tape Archive from WMO GCC (IMMT-2 or IMMT-3 format)�	International Maritime Meteorological (IMM) Data�
+022	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+025	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+027	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+028	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-85 Annual Receipts�	International Marine (US- or foreign-keyed ship data)
+030	927	ICOADS3_to_CDS_ships.json	NCDC: 1980-84 Period of Record�	International Marine (US- or foreign-keyed ship data)
+032	927	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Marine (US- or foreign-keyed ship data)
+033	927	ICOADS3_to_CDS_ships.json	NCDC: Annual Receipts (and duplicates; starting in 1986)�	International Marine (US- or foreign-keyed ship data)
+034	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+035	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+036	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+037	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+038	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+039	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+040	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+041	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+042	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+043	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+044	927	ICOADS3_to_CDS_ships.json	NCDC: 1986-97 Receipts (delayed)�	International Marine (US- or foreign-keyed ship data)
+078	927	ICOADS3_to_CDS_ships.json	NCDC: US-keyed Logbook Data Reconversion (TD-9972; keyed during 1996-97)�	International Marine (US- or foreign-keyed ship data)
+113	927	ICOADS3_to_CDS_ships.json	International Marine (US-keyed ship data)�	International Marine (US- or foreign-keyed ship data)
