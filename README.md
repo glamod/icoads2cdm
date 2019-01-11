@@ -1,2 +1,2 @@
 # icoads2cdm
-Code to translate ICOADS imma file to CDM tables
+C3S beta realease code to translate ICOADS imma files to CDM tables
