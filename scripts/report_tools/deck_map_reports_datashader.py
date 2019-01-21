@@ -110,10 +110,10 @@ def read_monthly_data():
                 df_varis[vari].rename({'observation_value':vari},axis='columns', inplace=True)
                 df_varis[vari][vari] = df_varis[vari]*vars_factor.get(vari) + vars_offset.get(vari)
                 df_varis[vari].rename({'quality_flag':vari+'_qc'},axis='columns', inplace=True)
-                
+
     for vari in vars_out:
         df_header = pd.concat([df_header,df_varis.get(vari)],axis=1,sort=False)
-        
+
     return df_header,vars_out
 
 
