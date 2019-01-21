@@ -13,7 +13,6 @@ import six           # pip install six
 
 import os
 import sys
-sys.path.append('/Users/iregon/C3S/dessaps/CDSpy/py_tools')
 import logging
 import pandas as pd
 import __main__ as main
@@ -56,7 +55,6 @@ if  not os.path.isdir(out_path):
     print("Output directory not found: {}".format(out_path))
     exit(1)
 
-
 status = mkdir_ifNot(outdir_logs)
 if status != 0:
     print('Could not create log output directory {0}: {1}'.format(outdir_logs,status))
@@ -78,42 +76,10 @@ qc_columns['dpt'] = ['UID','bud', 'clim', 'nonorm', 'ssat', 'noval', 'rep', 'rep
 qc_columns['pos'] = ['UID','trk', 'date', 'time', 'pos', 'blklst']
 qc_dtype = {'UID':'object'}
 qc_delimiter = ','
-data_dtype = 'object'
-data_delimiter = '|'
 chunksize = 100000
 vars_init = ['sst','at','slp','dpt']
 vars_in = []
 # NOW GO  =====================================================================
-# 0. CHECK NECESSARY INPUT, ABANDON OTHERWISE
-qc_pos_filename = os.path.join(qc_path,yr,mo,"_".join(['POS','qc',yr+mo,'standard.csv']))
-if not os.path.isfile(qc_pos_filename):
-    logging.error('POSITION QC file not found: {}'.format(qc_pos_filename))
-    exit(1)
-
-# Check firstly header file. If not available or len(0), just abandon with no error
-hdr_filename = os.path.join(data_path,"-".join(['header',yr,mo]) + '.psv')
-if not os.path.isfile(hdr_filename):
-    logging.warning('NO HEADER TABLE FILE FOUND FOR {0}-{1}: exit with no error'.format(yr,mo))
-    exit(0)
-
-hdr_data = pd.read_csv(hdr_filename,delimiter = data_delimiter,usecols=['report_id'],nrows = 2)
-
-if len(hdr_data) == 0:
-    logging.warning('NO DATA IN HEADER TABLE FILE FOR {0}-{1}: exit with no error'.format(yr,mo))
-    exit(0)
-
-for vari in vars_init:
-    qc_vari_filename = os.path.join(qc_path,yr,mo,"_".join([vars_labels['short_name_upper'].get(vari),'qc',yr+mo,'standard.csv']))
-    data_filename = os.path.join(data_path,"-".join(['observations',vars_labels['short_name_lower'].get(vari),yr,mo]) + '.psv')
-    if not os.path.isfile(qc_vari_filename) or not os.path.isfile(data_filename):
-        logging.warning('Could not finc {0} qc or data file: {1},{2}'.format(vari,qc_vari_filename,data_filename))
-        logging.warning('Flagging of {0} excluded'.format(vari))
-    else:
-        vars_in.append(vari)
-
-if len(vars_in) == 0:
-    logging.error('NO DATA OR QC FLAGS TO APPLY')
-    exit(1)
 # 0. INITIALIZE TO STORE MONTHLY PERCENT OF FAILS
 out_assess = dict()
 for vari in vars_in:
@@ -123,6 +89,15 @@ for vari in vars_in:
 for yr in range(y_ini,y_end + 1):
     for mo in range(1,13):
         dt = datetime.datetime(yr,mo,1)
+        # Check firstly header file. If not available or len(0), go to next iteration
+        hdr_filename = os.path.join(data_path,"-".join(['header',yr,mo]) + '.psv')
+        if not os.path.isfile(hdr_filename):
+            logging.warning('NO HEADER TABLE FILE FOUND FOR {0}-{1}: continue'.format(yr,mo))
+            continue
+        hdr_data = pd.read_csv(hdr_filename,delimiter = data_delimiter,usecols=['report_id'],nrows = 2)
+        if len(hdr_data) == 0:
+            logging.warning('NO DATA IN HEADER TABLE FILE FOR {0}-{1}: continue'.format(yr,mo))
+            continue
         # 1. READ POS QC DATA TO DF--------------------------------------------------------
         # Read the whole thing with no chunks. Even if lots of records, ncolumns is not large: otherwise difficult to match record ids with data file
         qc_pos_filename = os.path.join(qc_path,yr,mo,"_".join(['POS','qc',yr+mo,'standard.csv']))
@@ -135,8 +110,8 @@ for yr in range(y_ini,y_end + 1):
         qc_df_pos.drop('total',axis = 1, inplace=True)
         qc_df_pos.rename({'global':'pos'},axis=1,inplace=True)
         if len(qc_df_pos) == 0:
-            logging.error('NO POS QC FLAGS TO APPLY')
-            exit(1)
+            logging.warning('NO POS QC FLAGS TO APPLY TO {0}-{1}: continue'.format(yr,mo)')
+            continue
         # 2. LOOP THROUGH VARS --------------------------------------------------------
         # Read vari qc
         for vari in vars_in:
@@ -153,7 +128,6 @@ for yr in range(y_ini,y_end + 1):
             qc_df['observation_id'] = qc_df['index'].apply(lambda x: "-".join(['ICOADS-30',x,vars_labels['short_name_upper'].get(vari)]))
             qc_df.drop('index',axis = 1, inplace=True)
             qc_df.set_index('observation_id',drop=False,inplace=True)
-            # qc_df : 'observation_id','quality_flag','pos', 'vari_qcs'
 
             out_assess[vari]['pos'].loc[dt]
 
@@ -165,14 +139,7 @@ for yr in range(y_ini,y_end + 1):
             data_filename = os.path.join(data_path,"-".join(['observations',vars_labels['short_name_lower'].get(vari),yr,mo]) + '.psv')
             df_vari = pd.read_csv(data_filename,usecols=[0,6,7,14],sep="|",skiprows=0,na_values=["NULL"])
             df_vari.set_index('observation_id',drop=False,inplace=True)
-            #shutil.move(os.path.join(src, filename), os.path.join(dst, filename))
-            for df in data_tfrObj:
-                header = True if ichunk == 1 else False
-                mode = 'w' if ichunk == 1 else 'a'
-                df.to_csv(data_filename_qc,index = False,header = header ,sep = "|", mode = mode, encoding = 'utf-8')
-                ichunk += 1
 
-            if os.path.isfile(data_filename_qc) and os.stat(data_filename_qc).st_size>0:
-                shutil.move(data_filename_qc, data_filename)
-            else:
-                logging.error('QC flagging resulted in no file or empty file. Original data file not replaced.')
+            qc_df = df_vari.join(qc_df,how='inner') # 'inner', from index intersection: if not in qc_file, won't show
+            n_reports = len(qc_df)
+            out_assess[vari].loc[dt] =  qc_df.sum()/n_reports
