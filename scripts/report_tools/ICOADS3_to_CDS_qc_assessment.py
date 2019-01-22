@@ -22,6 +22,7 @@ from common.file_functions import *
 from common.var_properties import *
 from common.file_functions import *
 import shutil
+import datetime
 
 if sys.version_info[0] >= 3:
     py3 = True
@@ -42,30 +43,23 @@ this_script = main.__file__
 # 1. From command line. Check output dirs, create log, clean output from
 # previous runs on file
 try:
-    y_ini = sys.argv[1]
-    y_end = sys.argv[2]
+    y_ini = int(sys.argv[1])
+    y_end = int(sys.argv[2])
     qc_path = sys.argv[3]
     data_path = sys.argv[4]
-    out_path = sys.argv[5]
+    #out_path = sys.argv[5]
 except Exception as e:
     print("Error processing line argument input to script: ", e)
     exit(1)
 
-if  not os.path.isdir(out_path):
-    print("Output directory not found: {}".format(out_path))
-    exit(1)
+print(y_ini,y_end,qc_path,data_path)
+#if  not os.path.isdir(out_path):
+#    print("Output directory not found: {}".format(out_path))
+#    exit(1)
 
-status = mkdir_ifNot(outdir_logs)
-if status != 0:
-    print('Could not create log output directory {0}: {1}'.format(outdir_logs,status))
-    exit(1)
 
 setup_log(file_mode='w') # Beware: 'w' might not work in python 2!!!!!
-logging.info("{0} on files {1},{2}".format(this_script,yr,mo))
-logging.info('Searching path {}'.format(os.path.join(out_path,"-".join(['observations','*',yr,mo]) + '_qc.psv')))
-for f in glob.glob(os.path.join(out_path,"-".join(['observations','*',yr,mo]) + '_qc.psv')):
-    logging.info('Removing file {}'.format(f))
-    os.remove(f)
+logging.info("{0} on files in {1}".format(this_script,data_path))
 
 # PARAMETERS ===================================================================
 qc_columns = dict()
@@ -86,15 +80,19 @@ for vari in vars_init:
     out_assess[vari] = pd.DataFrame(index = pd.date_range(start = datetime.datetime(y_ini,1,1),end = datetime.datetime(y_end,12,1),freq='MS'),columns = qc_columns.get(vari)[1:])
 
 
-for yr in range(y_ini,y_end + 1):
-    for mo in range(1,13):
-        dt = datetime.datetime(yr,mo,1)
+print(out_assess)
+
+for yri in range(y_ini,y_end + 1):
+    for moi in range(1,13):
+        dt = datetime.datetime(yri,moi,1)
+        yr = str(yri)
+        mo = '{:02d}'.format(moi)
         # Check firstly header file. If not available or len(0), go to next iteration
         hdr_filename = os.path.join(data_path,"-".join(['header',yr,mo]) + '.psv')
         if not os.path.isfile(hdr_filename):
             logging.warning('NO HEADER TABLE FILE FOUND FOR {0}-{1}: continue'.format(yr,mo))
             continue
-        hdr_data = pd.read_csv(hdr_filename,delimiter = data_delimiter,usecols=['report_id'],nrows = 2)
+        hdr_data = pd.read_csv(hdr_filename,delimiter = "|",usecols=['report_id'],nrows = 2)
         if len(hdr_data) == 0:
             logging.warning('NO DATA IN HEADER TABLE FILE FOR {0}-{1}: continue'.format(yr,mo))
             continue
@@ -111,11 +109,11 @@ for yr in range(y_ini,y_end + 1):
         qc_df_pos.drop('total',axis = 1, inplace=True)
         qc_df_pos.rename({'global':'pos'},axis=1,inplace=True)
         if len(qc_df_pos) == 0:
-            logging.warning('NO POS QC FLAGS TO APPLY TO {0}-{1}: continue'.format(yr,mo)')
+            logging.warning('NO POS QC FLAGS TO APPLY TO {0}-{1}: continue'.format(yr,mo))
             continue
         # 2. LOOP THROUGH VARS --------------------------------------------------------
         # Read vari qc, merge with qc flag, get obs_id from observations file and compute percent of fails per test
-        for vari in vars_in:
+        for vari in vars_init:
             qc_vari_filename = os.path.join(qc_path,yr,mo,"_".join([vars_labels['short_name_upper'].get(vari),'qc',yr+mo,'standard.csv']))
             logging.info('Reading {0} qc file: {1}'.format(vari,qc_vari_filename))
             qc_df_vari = pd.read_csv(qc_vari_filename,dtype = qc_dtype,usecols=qc_columns.get(vari), delimiter = qc_delimiter, error_bad_lines = False, warn_bad_lines = True )
@@ -136,6 +134,7 @@ for yr in range(y_ini,y_end + 1):
 
             # Open observations-vari table: only read observation_id, longitude, latitude and observation_value
             data_filename = os.path.join(data_path,"-".join(['observations',vars_labels['short_name_lower'].get(vari),yr,mo]) + '.psv')
+            logging.info('Reading {0} data file: {1}'.format(vari,data_filename))
             df_vari = pd.read_csv(data_filename,usecols=[0,6,7,14],sep="|",skiprows=0,na_values=["NULL"])
             df_vari.set_index('observation_id',drop=True,inplace=True)
 
@@ -145,4 +144,7 @@ for yr in range(y_ini,y_end + 1):
                     logging.warning('NO COMBINED QC FLAGS AND OBSERVATIONS ({}): continue'.format(vari))
                     continue
 
-            out_assess[vari].loc[dt] =  qc_df.sum()/n_reports
+             
+            out_assess[vari].loc[dt] =  qc_df_merged.sum()/n_reports
+
+print(out_assess)
