@@ -1,4 +1,4 @@
-home_directory=/group_workspaces/jasmin2/c3s311a_lot2
+home_directory=/gws/nopw/j04/c3s311a_lot2
 code_directory=$home_directory/code/marine_code/python/icoads2cds
 pyTools_directory=$code_directory/py_tools
 scripts_directory=$code_directory/scripts
