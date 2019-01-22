@@ -67,7 +67,7 @@ for f in glob.glob(os.path.join(out_path,"-".join(['observations','*',yr,mo]) + 
     logging.info('Removing file {}'.format(f))
     os.remove(f)
 
-# PARAMETERS ==================================================================
+# PARAMETERS ===================================================================
 qc_columns = dict()
 qc_columns['sst'] = ['UID','bud', 'clim', 'nonorm', 'freez', 'noval', 'hardlimit']
 qc_columns['at'] = ['UID','bud', 'clim', 'nonorm', 'noval', 'mat_blacklist', 'hardlimit']
@@ -82,8 +82,8 @@ vars_in = []
 # NOW GO  =====================================================================
 # 0. INITIALIZE TO STORE MONTHLY PERCENT OF FAILS
 out_assess = dict()
-for vari in vars_in:
-    out_assess[vari] = pd.DataFrame(index = pd.date_range(start = datetime.datetime(y_ini,1,1),end = datetime.datetime(y_end,12,1),freq='MS'),columns = qc_columns.get(vari))
+for vari in vars_init:
+    out_assess[vari] = pd.DataFrame(index = pd.date_range(start = datetime.datetime(y_ini,1,1),end = datetime.datetime(y_end,12,1),freq='MS'),columns = qc_columns.get(vari)[1:])
 
 
 for yr in range(y_ini,y_end + 1):
@@ -100,6 +100,7 @@ for yr in range(y_ini,y_end + 1):
             continue
         # 1. READ POS QC DATA TO DF--------------------------------------------------------
         # Read the whole thing with no chunks. Even if lots of records, ncolumns is not large: otherwise difficult to match record ids with data file
+        # Merge pos_qc tests to only qc flag. At this point we do not want that detail on this test
         qc_pos_filename = os.path.join(qc_path,yr,mo,"_".join(['POS','qc',yr+mo,'standard.csv']))
         logging.info('Reading position qc file: {}'.format(qc_pos_filename))
         qc_df_pos = pd.read_csv(qc_pos_filename,dtype = qc_dtype,usecols=qc_columns.get('pos'), delimiter = qc_delimiter, error_bad_lines = False, warn_bad_lines = True )
@@ -113,7 +114,7 @@ for yr in range(y_ini,y_end + 1):
             logging.warning('NO POS QC FLAGS TO APPLY TO {0}-{1}: continue'.format(yr,mo)')
             continue
         # 2. LOOP THROUGH VARS --------------------------------------------------------
-        # Read vari qc
+        # Read vari qc, merge with qc flag, get obs_id from observations file and compute percent of fails per test
         for vari in vars_in:
             qc_vari_filename = os.path.join(qc_path,yr,mo,"_".join([vars_labels['short_name_upper'].get(vari),'qc',yr+mo,'standard.csv']))
             logging.info('Reading {0} qc file: {1}'.format(vari,qc_vari_filename))
@@ -121,25 +122,27 @@ for yr in range(y_ini,y_end + 1):
             qc_df_vari.set_index('UID',inplace=True,drop=True)
             # Merge with pos now as string and build 'observation_id' as in observations-var table
             qc_df = qc_df_vari.join(qc_df_pos,how='inner')
-            qc_df['total'] = qc_df.sum(axis=1)
-            qc_df['quality_flag'] = qc_df['total'].apply(lambda x: '0' if x == 0 else '1'  )
-            qc_df.drop('total',axis = 1, inplace=True)
+            #qc_df['total'] = qc_df.sum(axis=1)
+            #qc_df['quality_flag'] = qc_df['total'].apply(lambda x: '0' if x == 0 else '1'  )
+            #qc_df.drop('total',axis = 1, inplace=True)
             qc_df['index'] = qc_df.index
             qc_df['observation_id'] = qc_df['index'].apply(lambda x: "-".join(['ICOADS-30',x,vars_labels['short_name_upper'].get(vari)]))
             qc_df.drop('index',axis = 1, inplace=True)
-            qc_df.set_index('observation_id',drop=False,inplace=True)
-
-            out_assess[vari]['pos'].loc[dt]
+            qc_df.set_index('observation_id',drop=True,inplace=True)
 
             if len(qc_df) == 0:
-                logging.error('NO COMBINED POS AND {} QC FLAGS TO APPLY'.format(vari))
+                logging.warning('NO COMBINED POS AND {} QC FLAGS TO APPLY: continue'.format(vari))
                 continue
 
             # Open observations-vari table: only read observation_id, longitude, latitude and observation_value
             data_filename = os.path.join(data_path,"-".join(['observations',vars_labels['short_name_lower'].get(vari),yr,mo]) + '.psv')
             df_vari = pd.read_csv(data_filename,usecols=[0,6,7,14],sep="|",skiprows=0,na_values=["NULL"])
-            df_vari.set_index('observation_id',drop=False,inplace=True)
+            df_vari.set_index('observation_id',drop=True,inplace=True)
 
-            qc_df = df_vari.join(qc_df,how='inner') # 'inner', from index intersection: if not in qc_file, won't show
+            qc_df_merged = df_vari.join(qc_df,how='inner') # 'inner', from index intersection: if not in qc_file, won't show
             n_reports = len(qc_df)
+            if n_reports == 0:
+                    logging.warning('NO COMBINED QC FLAGS AND OBSERVATIONS ({}): continue'.format(vari))
+                    continue
+
             out_assess[vari].loc[dt] =  qc_df.sum()/n_reports
