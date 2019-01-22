@@ -2,3 +2,12 @@ virtualenv --system-site-packages -p python2.7 i2c_env
 source ./i2c_env/bin/activate
 pip install -r icoads2cds_requirements.txt
 
+After path change from group_workspaces to gws in JASMIN around Jan2019:
+Changed paths in env files
+Pandas took ages to load (actually never saw it loading)
+Had to rebuild environemnt as above. Pandas took ages to load (acutally never saw it loading)
+Installed default pandas 0.19.1 and loaded ok (but was incompatible with swifter)
+Reinstalled pandas version compatible with swifter. Now it loaded, slow, but did.
+
+?????
+
