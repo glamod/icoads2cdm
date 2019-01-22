@@ -15,7 +15,8 @@ exec > $logfile 2>&1
 job_minutes=00
 job_hours=02
 memo=16000
-qc_path='/group_workspaces/jasmin2/c3s311a_lot2/data/level1/marine/sub_daily_data/QC/R3.0.0T/'
+#qc_path='/group_workspaces/jasmin2/c3s311a_lot2/data/level1/marine/sub_daily_data/QC/R3.0.0T/'
+qc_path='/gws/nopw/j04/c3s311a_lot2/data/level1/marine/sub_daily_data/IMMA1_R3.0.0T/working/QC/R3.0.0T/''
 
 if [ ! -d $jobs_dir ]; then mkdir $jobs_dir; fi
 
@@ -39,5 +40,3 @@ do
         ((counter--))
 	bsub_jobs $sid_deck $counter $sid_deck_job_dir
 done
-
-
