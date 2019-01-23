@@ -21,7 +21,7 @@ if [ ! -d $jobs_dir ]; then mkdir $jobs_dir; fi
 
 sid_deck_job_dir=$jobs_dir/$sid_deck/qc_assess
 sid_deck_data_dir=$parent_out_directory/$sid_deck
-sid_deck_report_dir=$parent_out_directory/$sid_deck/reports
+sid_deck_report_dir='/gws/nopw/j04/c3s311a_lot2/data/level1/marine/sub_daily_data/IMMA1_R3.0.0T/working/ingest/'$sid_deck'/reports'
 qc_path='/gws/nopw/j04/c3s311a_lot2/data/level1/marine/sub_daily_data/IMMA1_R3.0.0T/working/QC/R3.0.0T/'
 
 if [ ! -d $sid_deck_job_dir ]; then mkdir $sid_deck_job_dir ;else rm $sid_deck_job_dir/*;fi
@@ -31,4 +31,3 @@ last_imma=$(basename $(ls $parent_in_directory/$sid_deck/????-??.imma | tail -1)
 if (( ${first_imma:0:4} < 1981 ));then first_year=1981;else first_year=${first_imma:0:4};fi
 if (( ${last_imma:0:4} > 2010 ));then last_year=2010;else last_year=${last_imma:0:4};fi
 	bsub_jobs
-done
